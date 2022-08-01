@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.pancho.model.Car;
 
-public interface CarRepository extends MongoRepository<Car, Long> {
+public interface CarRepository extends MongoRepository<Car, String> {
     List<Car> findByBrand(String brand);
 }

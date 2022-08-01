@@ -15,54 +15,44 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pancho.model.Car;
-import com.pancho.repository.CarRepository;
-import com.pancho.web.exception.CarIdMismatchException;
-import com.pancho.web.exception.CarNotFoundException;
+import com.pancho.service.CarService;
 
 @RestController
 @RequestMapping("/api/cars")
 public class CarController {
 
     @Autowired
-    private CarRepository carRepository;
+    private CarService carService;
 
     @GetMapping
     public Iterable<Car> findAll() {
-        return carRepository.findAll();
+        return carService.findAll();
     }
 
     @GetMapping("/brand/{brand}")
-    public List<Car> findByTitle(@PathVariable String brand) {
-        return carRepository.findByBrand(brand);
+    public List<Car> findByBrand(@PathVariable String brand) {
+        return carService.findByBrand(brand);
     }
 
     @GetMapping("/{id}")
-    public Car findOne(@PathVariable long id) {
-        return carRepository.findById(id)
-          .orElseThrow(CarNotFoundException::new);
+    public Car findById(@PathVariable String id) {
+        return carService.findById(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Car create(@RequestBody Car car) {
-        Car resp = carRepository.save(car);
+        Car resp = carService.save(car);
         return resp;
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable long id) {
-        carRepository.findById(id)
-          .orElseThrow(CarNotFoundException::new);
-        carRepository.deleteById(id);
+    public void delete(@PathVariable String id) {
+        carService.delete(id);
     }
 
     @PutMapping("/{id}")
     public Car updateCar(@RequestBody Car car, @PathVariable String id) {
-        if (car.getId() != id) {
-            throw new CarIdMismatchException();
-        }
-        carRepository.findById(1l)
-          .orElseThrow(CarNotFoundException::new);
-        return carRepository.save(car);
+        return carService.updateCar(car, id);
     }
 }
