@@ -1,8 +1,7 @@
 package com.pancho.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import java.util.List;
+
 import javax.persistence.Id;
 
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -26,6 +25,10 @@ public class Car {
     
     private String brand;
     private String model;
-    private String img;
+    private String year;
+    private String transmission;
+    private int kilometers;
+    private int price;
+    private List<CarImage> img;
 
 }

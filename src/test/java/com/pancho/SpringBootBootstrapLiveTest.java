@@ -116,7 +116,8 @@ public class SpringBootBootstrapLiveTest {
         final Car car = new Car();
         car.setBrand(randomAlphabetic(10));
         car.setModel(randomAlphabetic(15));
-        car.setImg(randomAlphabetic(15));
+
+        
         return car;
     }
 

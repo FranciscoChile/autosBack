@@ -1,10 +1,6 @@
 com/pancho/config/SecurityConfig.class
 com/pancho/web/exception/CarIdMismatchException.class
-com/pancho/Application.class
-com/pancho/web/exception/CarNotFoundException.class
+com/pancho/repository/FileNotFoundException.class
+com/pancho/repository/StorageException.class
 com/pancho/web/RestExceptionHandler.class
-com/pancho/model/Car.class
-com/pancho/repository/CarRepository.class
-com/pancho/web/SimpleController.class
-com/pancho/config/WebConfig.class
-com/pancho/web/CarController.class
+com/pancho/model/CarImage.class
