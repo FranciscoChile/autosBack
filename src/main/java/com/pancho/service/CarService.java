@@ -55,14 +55,9 @@ public class CarService {
 		car = save(car);
 
 		if (files!=null && files.length > 0) {
-			//storageService.createSubDirectory(car.getId());
-            //crear folder en AWS
-            //storageService.createFolderAws(car.getId());
 
 			for (int i=0; i < files.length; i++) {
 				MultipartFile multipartFile = files[i];
-				//storageService.store(car.getId(), file);
-                //guardar en AWS
                 
                 File file = new File(multipartFile.getOriginalFilename());
                 
