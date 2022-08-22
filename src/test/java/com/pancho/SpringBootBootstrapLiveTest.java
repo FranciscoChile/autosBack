@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-import com.pancho.model.Car;
+import com.mube.model.Car;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

@@ -8,11 +8,11 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pancho</groupId>
-	<artifactId>auto-app</artifactId>
+	<groupId>com.mube</groupId>
+	<artifactId>mube-back</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>auto-app</name>
-	<description>Demo project for Spring Boot</description>
+	<name>mube-back</name>
+	<description>Mube platform backend</description>
 
     <dependencyManagement>
         <dependencies>
