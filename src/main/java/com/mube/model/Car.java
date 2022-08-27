@@ -22,7 +22,6 @@ public class Car {
     @Id
     private String id;
 
-    
     private String brand;
     private String model;
     private String year;

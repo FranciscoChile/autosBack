@@ -14,6 +14,11 @@
 	<name>mube-back</name>
 	<description>Mube platform backend</description>
 
+    <properties>
+        <servlet.version>4.0.0</servlet.version>
+		<java.version>11</java.version>
+    </properties>
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -105,10 +110,5 @@
 			</plugin>            
         </plugins>
     </build>
-
-    <properties>
-        <servlet.version>4.0.0</servlet.version>
-		<java.version>11</java.version>
-    </properties>
 
 </project>
