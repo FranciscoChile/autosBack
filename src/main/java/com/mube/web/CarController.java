@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -31,35 +32,59 @@ public class CarController {
     private CarService carService;
     
     @GetMapping
-    public Iterable<Car> findAll() {        
-        return carService.findAll();
+    public Iterable<Car> findAll() {       
+        try { 
+            return carService.findAll();
+        } catch(Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
     }
 
     @GetMapping("/brand/{brand}")
     public List<Car> findByBrand(@PathVariable String brand) {
-        return carService.findByBrand(brand);
+        try {
+            return carService.findByBrand(brand);
+        } catch(Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
     }
 
     @GetMapping("/{id}")
     public Car findById(@PathVariable String id) {
-        return carService.findById(id);
+        try {
+            return carService.findById(id);
+        } catch(Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Car create(@RequestBody Car car) {
-        Car resp = carService.save(car);
-        return resp;
+        try {
+            return carService.save(car);
+        } catch (Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
+        
     }
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable String id) {
-        carService.delete(id);
+        try {
+            carService.delete(id);
+        } catch (Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
     }
 
     @PutMapping("/{id}")
     public Car updateCar(@RequestBody Car car, @PathVariable String id) {
-        return carService.updateCar(car, id);
+        try {
+            return carService.updateCar(car, id);
+        } catch (Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
     }
 
 
