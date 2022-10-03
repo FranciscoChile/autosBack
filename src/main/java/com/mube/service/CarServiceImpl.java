@@ -19,7 +19,10 @@ import com.mube.repository.StorageService;
 import com.mube.web.exception.CarIdMismatchException;
 import com.mube.web.exception.CarNotFoundException;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class CarServiceImpl implements CarService {
     
     @Autowired
@@ -49,6 +52,8 @@ public class CarServiceImpl implements CarService {
     }
 
     public Car saveDataAndImages(Car car, MultipartFile[] files) throws  IOException {
+
+        log.debug("saveDataAndImages start");
 
         List<CarImage> imgList = new ArrayList<>();
         

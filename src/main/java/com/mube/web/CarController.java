@@ -24,6 +24,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mube.model.Car;
 import com.mube.service.CarService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 @RequestMapping("/api/cars")
 public class CarController {
@@ -91,11 +94,13 @@ public class CarController {
     @PostMapping(value="/car-multiple-images")
     @ResponseStatus(HttpStatus.CREATED)
 	public void saveProductMultipleImages(
-		@RequestParam("car") String c, 
+		@RequestParam("car") String c,
 		@RequestParam(value = "files", required=false) MultipartFile[] files
 	) throws JsonMappingException, JsonProcessingException, IOException {
+        log.debug("c: " + c);
 		ObjectMapper mapper = new ObjectMapper();			
 		Car car = mapper.readValue(c, Car.class);
+        log.debug("car: " + car.toString());
         carService.saveDataAndImages(car, files);
 	}
 

@@ -34,12 +34,17 @@ public class Car {
     private int kilometers;
     private int price;
     private List<CarImage> img;
+    private String fuel;
+    private String engine;
     private Date creationDate;
     private int autofactPrice;
     private int publicationPrice;
-    private List<Documentation> documents;
-    private List<Equipment> equipments;
-    private List<Revision> revisions;
-    private Owner owner;
+    private String owner;
+    private String documents;
+    private String equipments;
+    private String indoorConditions;
+    private String electricController;
+    private String mechanicRevision;
+    private String bodyworkEvaluation;
 
 }
