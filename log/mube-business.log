@@ -1,0 +1,4 @@
+[INFO ] 2022-10-03 00:13:56 [main] Application [55] - Starting Application using Java 11.0.8 on MacBook-Pro-de-Francisco.local with PID 41551 (/Volumes/francisco/desarrolloSW/java/mube/mube-back/target/classes started by francisco in /Volumes/francisco/desarrolloSW/java/mube/mube-back)
+[DEBUG] 2022-10-03 00:13:56 [main] Application [56] - Running with Spring Boot v2.6.4, Spring v5.3.16
+[INFO ] 2022-10-03 00:13:56 [main] Application [640] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-10-03 00:14:12 [main] Application [61] - Started Application in 19.034 seconds (JVM running for 25.069)
