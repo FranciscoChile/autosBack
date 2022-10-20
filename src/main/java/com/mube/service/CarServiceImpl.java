@@ -34,7 +34,16 @@ public class CarServiceImpl implements CarService {
     @Value("${storage.baseUrl}")
     String baseUrlStorage;
     
-    public Iterable<Car> findAll() {
+    public Iterable<Car> findAll(String marca) {
+        Query query = new Query();
+        Criteria criteria1 = new Criteria().where("projectTag").regex(searchCriteria, "i");
+        Criteria criteria2 = new Criteria().where("projectName").regex(searchCriteria, "i");
+        query.addCriteria(new Criteria().orOperator(c1,c2));
+        // BooleanBuilder bb = new BooleanBuilder();
+        // if (marca != null && !marca.isEmpty()) {
+            
+        // }
+        // return carRepository.find(bb.getValue());
         return carRepository.findAll();
     }
     

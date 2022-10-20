@@ -53,7 +53,7 @@
 			<AppenderRef ref="RollingFileApp" />
 		</Root>
 		
-		<!-- LOG "com.procel" at DEBUG level -->
+		<!-- LOG "com.mube" at DEBUG level -->
         <Logger name="com.mube" level="debug" additivity="false">
             <AppenderRef ref="RollingFileBusiness" level="debug" />
         </Logger>

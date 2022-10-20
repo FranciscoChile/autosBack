@@ -35,9 +35,12 @@ public class CarController {
     private CarService carService;
     
     @GetMapping
-    public Iterable<Car> findAll() {       
-        try { 
-            return carService.findAll();
+    public Iterable<Car> findAll(
+        @RequestParam(name = "marca", required = false) String marca
+    ) {
+        log.info("filtro marca: " + marca);
+        try {
+            return carService.findAll(marca);
         } catch(Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }

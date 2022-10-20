@@ -9,7 +9,7 @@ import com.mube.model.Car;
 
 public interface CarService {
 
-    public Iterable<Car> findAll();
+    public Iterable<Car> findAll(String marca);
 
     public List<Car> findByBrand(String brand);
 
