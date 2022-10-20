@@ -70,3 +70,313 @@ Using generated security password: 58267373-0623-4188-8f09-ca147e7fb42c
 2022-10-03 02:30:50,107 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2022-10-03 02:30:50,122 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 14 ms
 2022-10-03 02:30:51,105 INFO c.m.d.l.SLF4JLogger [http-nio-8080-exec-1] Opened connection [connectionId{localValue:7, serverValue:367626}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:35,604 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-10-03 22:50:35,631 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-03 22:50:35,824 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 175 ms. Found 2 MongoDB repository interfaces.
+2022-10-03 22:50:38,767 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-10-03 22:50:38,824 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-03 22:50:38,827 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-03 22:50:38,831 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-10-03 22:50:39,136 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-10-03 22:50:39,137 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5570 ms
+2022-10-03 22:50:41,310 INFO c.m.d.l.SLF4JLogger [main] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.euxk4fg.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-uycgz8-shard-0'}
+2022-10-03 22:50:41,407 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 22:50:41,528 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 22:50:41,533 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 22:50:42,636 INFO o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 0451b6f6-a355-4eba-80be-eaf788157dfe
+
+2022-10-03 22:50:42,988 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure any request
+2022-10-03 22:50:43,108 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:2, serverValue:384834}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:43,109 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:5, serverValue:384834}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:43,111 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=661467888, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=63232371dff3bc68943240a0, counter=6}, lastWriteDate=Mon Oct 03 22:50:58 CLST 2022, lastUpdateTimeNanos=728707609108581}
+2022-10-03 22:50:43,121 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Setting max election id to 7fffffff0000000000000008 from replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:43,122 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Setting max set version to 1 from replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:43,123 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Discovered replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:43,966 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-10-03 22:50:44,262 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:4, serverValue:382547}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:44,263 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=260005587, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632322b618e92be542267e74, counter=4}, lastWriteDate=Mon Oct 03 22:51:00 CLST 2022, lastUpdateTimeNanos=728708765582538}
+2022-10-03 22:50:44,279 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-03 22:50:44,282 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:1, serverValue:382547}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:45,276 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:6, serverValue:381924}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 22:50:45,277 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=230399225, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632324197a3a9db25bae17aa, counter=3}, lastWriteDate=Mon Oct 03 22:51:01 CLST 2022, lastUpdateTimeNanos=728709779958517}
+2022-10-03 22:50:45,287 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:3, serverValue:381924}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 22:52:44,105 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-03 22:52:44,106 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-10-03 22:52:44,132 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 25 ms
+2022-10-03 22:52:45,295 INFO c.m.d.l.SLF4JLogger [http-nio-8080-exec-1] Opened connection [connectionId{localValue:7, serverValue:384889}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 22:52:47,930 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is software.amazon.awssdk.services.s3.model.S3Exception: Access Denied (Service: S3, Status Code: 403, Request ID: T60QKKB725DG87C1, Extended Request ID: dAjLu60RE6YKLIaBKGEOelwZnnZNsrvpHd24PaBrCn5efPTHRHG/bngHef+4mDQDZmvnCj9+Ptv8dADImgeLJQ==)] with root cause
+software.amazon.awssdk.services.s3.model.S3Exception: Access Denied (Service: S3, Status Code: 403, Request ID: T60QKKB725DG87C1, Extended Request ID: dAjLu60RE6YKLIaBKGEOelwZnnZNsrvpHd24PaBrCn5efPTHRHG/bngHef+4mDQDZmvnCj9+Ptv8dADImgeLJQ==)
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handleErrorResponse(AwsXmlPredicatedResponseHandler.java:156) ~[aws-xml-protocol-2.15.0.jar:?]
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handleResponse(AwsXmlPredicatedResponseHandler.java:106) ~[aws-xml-protocol-2.15.0.jar:?]
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handle(AwsXmlPredicatedResponseHandler.java:84) ~[aws-xml-protocol-2.15.0.jar:?]
+	at software.amazon.awssdk.protocols.xml.internal.unmarshall.AwsXmlPredicatedResponseHandler.handle(AwsXmlPredicatedResponseHandler.java:42) ~[aws-xml-protocol-2.15.0.jar:?]
+	at software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler$Crc32ValidationResponseHandler.handle(AwsSyncClientHandler.java:94) ~[aws-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.handler.BaseClientHandler.lambda$successTransformationResponseHandler$5(BaseClientHandler.java:229) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.HandleResponseStage.execute(HandleResponseStage.java:40) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.HandleResponseStage.execute(HandleResponseStage.java:30) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:73) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:42) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:77) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:39) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:50) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:36) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:64) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:34) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:56) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:36) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.executeWithTimer(ApiCallTimeoutTrackingStage.java:80) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:60) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:42) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:48) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:31) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:37) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:26) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.http.AmazonSyncHttpClient$RequestExecutionBuilderImpl.execute(AmazonSyncHttpClient.java:193) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.invoke(BaseSyncClientHandler.java:133) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.doExecute(BaseSyncClientHandler.java:159) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:112) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:167) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:94) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45) ~[sdk-core-2.15.0.jar:?]
+	at software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:55) ~[aws-core-2.15.0.jar:?]
+	at software.amazon.awssdk.services.s3.DefaultS3Client.putObject(DefaultS3Client.java:8146) ~[s3-2.15.0.jar:?]
+	at com.mube.repository.StorageServiceImpl.storeFilesFolderAws(StorageServiceImpl.java:31) ~[classes/:?]
+	at com.mube.service.CarServiceImpl.saveDataAndImages(CarServiceImpl.java:74) ~[classes/:?]
+	at com.mube.web.CarController.saveProductMultipleImages(CarController.java:104) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2022-10-03 23:25:33,155 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:8, serverValue:385489}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:33,548 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:9, serverValue:382456}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:34,857 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:10, serverValue:383088}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:38,322 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Exception in monitor thread while connecting to server ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216) [mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152) [mongodb-driver-core-4.4.2.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:?]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:115) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:140) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:461) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1349) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958) ~[?:?]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576) ~[mongodb-driver-core-4.4.2.jar:?]
+	... 5 more
+2022-10-03 23:25:38,599 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:11, serverValue:385515}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:38,600 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=167929767, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=63232371dff3bc68943240a0, counter=6}, lastWriteDate=Mon Oct 03 23:25:38 CLST 2022, lastUpdateTimeNanos=730404095851254}
+2022-10-03 23:25:38,602 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Discovered replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:41,537 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Exception in monitor thread while connecting to server ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216) [mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152) [mongodb-driver-core-4.4.2.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:?]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:115) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:140) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:461) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1349) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958) ~[?:?]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576) ~[mongodb-driver-core-4.4.2.jar:?]
+	... 5 more
+2022-10-03 23:25:41,741 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:12, serverValue:382454}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:41,741 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=138369391, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632324197a3a9db25bae17aa, counter=3}, lastWriteDate=Mon Oct 03 23:25:41 CLST 2022, lastUpdateTimeNanos=730407237430685}
+2022-10-03 23:25:44,641 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Exception in monitor thread while connecting to server ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216) [mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152) [mongodb-driver-core-4.4.2.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:?]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:115) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:140) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:467) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:461) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1349) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:958) ~[?:?]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718) ~[mongodb-driver-core-4.4.2.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576) ~[mongodb-driver-core-4.4.2.jar:?]
+	... 5 more
+2022-10-03 23:25:44,908 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:13, serverValue:383087}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 23:25:44,909 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b917171de136bf0df283b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=183477684, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632322b618e92be542267e74, counter=4}, lastWriteDate=Mon Oct 03 23:25:44 CLST 2022, lastUpdateTimeNanos=730410404973249}
+2022-10-03 23:36:30,132 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-10-03 23:36:30,137 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-03 23:36:30,345 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 193 ms. Found 2 MongoDB repository interfaces.
+2022-10-03 23:36:31,993 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-10-03 23:36:32,048 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-03 23:36:32,051 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-03 23:36:32,052 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-10-03 23:36:32,619 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-10-03 23:36:32,620 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4073 ms
+2022-10-03 23:36:33,758 INFO c.m.d.l.SLF4JLogger [main] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.euxk4fg.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-uycgz8-shard-0'}
+2022-10-03 23:36:33,811 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 23:36:33,920 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 23:36:33,952 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 23:36:35,390 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:3, serverValue:382639}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,390 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:4, serverValue:382639}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,390 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:2, serverValue:385580}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,392 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:5, serverValue:383269}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,392 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:6, serverValue:383269}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,395 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=885367713, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632322b618e92be542267e74, counter=4}, lastWriteDate=Mon Oct 03 23:36:35 CLST 2022, lastUpdateTimeNanos=731060900736172}
+2022-10-03 23:36:35,394 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=883552963, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632324197a3a9db25bae17aa, counter=3}, lastWriteDate=Mon Oct 03 23:36:35 CLST 2022, lastUpdateTimeNanos=731060900503828}
+2022-10-03 23:36:35,393 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=885458529, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=63232371dff3bc68943240a0, counter=6}, lastWriteDate=Mon Oct 03 23:36:35 CLST 2022, lastUpdateTimeNanos=731060900174558}
+2022-10-03 23:36:35,397 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:1, serverValue:385632}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,417 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Setting max election id to 7fffffff0000000000000008 from replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,419 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Setting max set version to 1 from replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,419 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9c318353c0365fbd1d7b', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Discovered replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:36:35,911 INFO o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: bf3e3648-a2cb-4ba6-9f81-434038487362
+
+2022-10-03 23:36:36,167 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure any request
+2022-10-03 23:36:36,772 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-10-03 23:36:36,848 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-03 23:37:32,745 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-03 23:37:32,746 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-10-03 23:37:32,750 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-10-03 23:37:34,115 INFO c.m.d.l.SLF4JLogger [http-nio-8080-exec-1] Opened connection [connectionId{localValue:7, serverValue:385610}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:39,443 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-10-03 23:52:39,448 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-03 23:52:39,633 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 167 ms. Found 2 MongoDB repository interfaces.
+2022-10-03 23:52:41,418 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-10-03 23:52:41,521 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-03 23:52:41,529 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-03 23:52:41,531 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-10-03 23:52:41,914 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-10-03 23:52:41,919 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6265 ms
+2022-10-03 23:52:43,650 INFO c.m.d.l.SLF4JLogger [main] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.euxk4fg.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-uycgz8-shard-0'}
+2022-10-03 23:52:43,870 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 23:52:44,157 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 23:52:44,175 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-srv-cluster0.euxk4fg.mongodb.net] Adding discovered server ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017 to client view of cluster
+2022-10-03 23:52:45,918 INFO o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 80153a64-bd1b-4d43-8ad5-3905d4f3ee1c
+
+2022-10-03 23:52:46,652 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:4, serverValue:382890}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,653 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:3, serverValue:382890}] to ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,652 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:1, serverValue:385902}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,653 INFO c.m.d.l.SLF4JLogger [cluster-rtt-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:6, serverValue:383518}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,658 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1600985064, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632324197a3a9db25bae17aa, counter=3}, lastWriteDate=Mon Oct 03 23:52:46 CLST 2022, lastUpdateTimeNanos=732032187671742}
+2022-10-03 23:52:46,659 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:5, serverValue:383518}] to ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,663 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure any request
+2022-10-03 23:52:46,666 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1601445049, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=632322b618e92be542267e74, counter=4}, lastWriteDate=Mon Oct 03 23:52:46 CLST 2022, lastUpdateTimeNanos=732032188070116}
+2022-10-03 23:52:46,669 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Opened connection [connectionId{localValue:2, serverValue:385902}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,676 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1597180265, setName='atlas-uycgz8-shard-0', canonicalAddress=ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017, hosts=[ac-nxijts5-shard-00-00.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-01.euxk4fg.mongodb.net:27017, ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017], passives=[], arbiters=[], primary='ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='SA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=63232371dff3bc68943240a0, counter=6}, lastWriteDate=Mon Oct 03 23:52:46 CLST 2022, lastUpdateTimeNanos=732032187965092}
+2022-10-03 23:52:46,682 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Setting max election id to 7fffffff0000000000000008 from replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,685 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Setting max set version to 1 from replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:46,687 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='633b9ffb8664e3063b350232', description='null'}-ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017] Discovered replica set primary ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017
+2022-10-03 23:52:47,679 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-10-03 23:52:47,798 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-03 23:54:05,686 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-03 23:54:05,770 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-10-03 23:54:05,775 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2022-10-03 23:54:06,661 INFO c.m.d.l.SLF4JLogger [http-nio-8080-exec-2] Opened connection [connectionId{localValue:7, serverValue:385921}] to ac-nxijts5-shard-00-02.euxk4fg.mongodb.net:27017

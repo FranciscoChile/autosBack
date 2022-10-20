@@ -14,13 +14,15 @@ public class StorageServiceImpl implements StorageService {
     @Override
     public void storeFilesFolderAws(String folderName, File file) {        
         
+        //region sa-east-1
+
         String bucketName = "mubefotos";
         String fileName="";
 
         fileName = folderName + "/" + file.getName();
 
         S3Client client = S3Client.builder().build();
-         
+        
         PutObjectRequest request = PutObjectRequest.builder()
                             .bucket(bucketName).key(fileName).build();
 
