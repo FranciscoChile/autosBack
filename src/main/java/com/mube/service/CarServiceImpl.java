@@ -45,19 +45,14 @@ public class CarServiceImpl implements CarService {
         if (marca != null && marca.trim().length() > 0) {
             Criteria criteria1 = Criteria.where("brand").regex(marca, "i");
             // Criteria criteria2 = new
-            // Criteria().where("projectName").regex(searchCriteria, "i");
+            // Criteria.where("projectName").regex(searchCriteria, "i");
             query.addCriteria(new Criteria().orOperator(criteria1));
         }
-        // BooleanBuilder bb = new BooleanBuilder();
-        // BooleanBuilder bb = new BooleanBuilder();
-        // if (marca != null && !marca.isEmpty()) {
 
-        // }
         List<Car> sal = mongoTemplate.find(query, Car.class, "car");
         log.debug("registros: " + sal.size());
 
         return sal;
-        // return carRepository.findAll();
     }
 
     public List<Car> findByBrand(String brand) {
