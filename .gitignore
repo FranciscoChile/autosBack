@@ -30,3 +30,5 @@ build/
 .vscode/
 target/
 log/
+log/mube-business.log
+log/mube.log
