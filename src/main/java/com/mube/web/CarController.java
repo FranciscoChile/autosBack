@@ -33,15 +33,14 @@ public class CarController {
 
     @Autowired
     private CarService carService;
-    
+
     @GetMapping
     public Iterable<Car> findAll(
-        @RequestParam(name = "marca", required = false) String marca
-    ) {
+            @RequestParam(name = "marca", required = false) String marca) {
         log.info("filtro marca: " + marca);
         try {
             return carService.findAll(marca);
-        } catch(Exception e) {
+        } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }
     }
@@ -50,7 +49,7 @@ public class CarController {
     public List<Car> findByBrand(@PathVariable String brand) {
         try {
             return carService.findByBrand(brand);
-        } catch(Exception e) {
+        } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }
     }
@@ -59,7 +58,7 @@ public class CarController {
     public Car findById(@PathVariable String id) {
         try {
             return carService.findById(id);
-        } catch(Exception e) {
+        } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }
     }
@@ -72,16 +71,7 @@ public class CarController {
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
         }
-        
-    }
 
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable String id) {
-        try {
-            carService.delete(id);
-        } catch (Exception e) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
-        }
     }
 
     @PutMapping("/{id}")
@@ -93,21 +83,41 @@ public class CarController {
         }
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable String id) {
+        try {
+            carService.delete(id);
+        } catch (Exception e) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
+    }
 
-    @PostMapping(value="/car-multiple-images")
+    @PostMapping(value = "/car-multiple-images")
     @ResponseStatus(HttpStatus.CREATED)
-	public void saveProductMultipleImages(
-		@RequestParam("car") String c,
-		@RequestParam(value = "files", required=false) MultipartFile[] files
-	) throws JsonMappingException, JsonProcessingException, IOException {
+    public void saveProductMultipleImages(
+            @RequestParam("car") String c,
+            @RequestParam(value = "files", required = false) MultipartFile[] files)
+            throws JsonMappingException, JsonProcessingException, IOException {
         log.debug("c: " + c);
-		ObjectMapper mapper = new ObjectMapper();			
-		Car car = mapper.readValue(c, Car.class);
+        ObjectMapper mapper = new ObjectMapper();
+        Car car = mapper.readValue(c, Car.class);
         log.debug("car: " + car.toString());
         carService.saveDataAndImages(car, files);
-	}
+    }
 
-
-
+    @PutMapping(value = "/car-multiple-images/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void updateProductMultipleImages(
+            @PathVariable String id,
+            @RequestParam("car") String c,
+            @RequestParam(value = "files", required = false) MultipartFile[] files)
+            throws JsonMappingException, JsonProcessingException, IOException {
+        log.debug("id: " + id);
+        ObjectMapper mapper = new ObjectMapper();
+        Car car = mapper.readValue(c, Car.class);
+        log.debug("car: " + car.toString());
+        // carService.saveDataAndImages(car, files);
+        carService.updateCar(car, id);
+    }
 
 }
